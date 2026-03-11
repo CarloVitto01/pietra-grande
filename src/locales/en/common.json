@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "restaurant": "Restaurant",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "welcome": "Welcome",
+    "titleLine1": "to Agriturismo",
+    "titleLine2": "Pietra Grande",
+    "subtitle": "A corner of paradise among nature and tradition.",
+    "cta": "Discover more"
+  },
+  "intro": {
+    "title": "Our Agriturismo",
+    "text": "Nestled in the heart of the countryside, Pietra Grande is the perfect place for a holiday of relaxation and authenticity. Discover the beauty of our country house, surrounded by vineyards and olive groves."
+  },
+  "features": {
+    "roomsTitle": "Our Rooms",
+    "roomsText": "Comfort and charm in our welcoming rooms.",
+    "roomsButton": "Discover the rooms",
+    "restaurantTitle": "Our Restaurant",
+    "restaurantText": "Authentic flavors and local products.",
+    "restaurantButton": "Our cuisine",
+    "natureTitle": "Relax & Nature",
+    "natureText": "Pool, trekking and outdoor activities.",
+    "natureButton": "Discover the activities"
+  },
+  "ctaBanner": {
+    "title": "Experience nature, taste tradition",
+    "text": "Authentic experiences, great food and enchanting landscapes.",
+    "button": "Book your stay"
+  }
+}

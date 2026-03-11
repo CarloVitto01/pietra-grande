@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "rooms": "Camere",
+    "restaurant": "Ristorante",
+    "contacts": "Contatti"
+  },
+  "hero": {
+    "welcome": "Benvenuti",
+    "titleLine1": "all’Agriturismo",
+    "titleLine2": "Pietra Grande",
+    "subtitle": "Un angolo di paradiso tra natura e tradizione.",
+    "cta": "Scopri di più"
+  },
+  "intro": {
+    "title": "Il Nostro Agriturismo",
+    "text": "Immerso nel cuore della campagna, Pietra Grande è il luogo ideale per una vacanza di relax e autenticità. Scopri la bellezza della nostra casa di campagna, circondata da vigneti e uliveti."
+  },
+  "features": {
+    "roomsTitle": "Le Nostre Camere",
+    "roomsText": "Comfort e charme nelle nostre accoglienti stanze.",
+    "roomsButton": "Scopri le camere",
+    "restaurantTitle": "Il Nostro Ristorante",
+    "restaurantText": "Sapori genuini e prodotti del territorio.",
+    "restaurantButton": "La nostra cucina",
+    "natureTitle": "Relax & Natura",
+    "natureText": "Piscina, trekking e attività all’aria aperta.",
+    "natureButton": "Scopri le attività"
+  },
+  "ctaBanner": {
+    "title": "Vivi la natura, gusta la tradizione",
+    "text": "Esperienze autentiche, tra buon cibo e paesaggi incantevoli.",
+    "button": "Prenota la tua vacanza"
+  }
+}
