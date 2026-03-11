@@ -86,7 +86,7 @@ export default function HeroSection({ backgroundImage }: Props) {
                   fontSize: "clamp(2rem, 4vw, 4rem)",
                   lineHeight: 0.95,
                   fontWeight: 500,
-                  color: "#5a3927",
+                  color: "#000000",
                   fontStyle: "italic",
                   fontFamily: "Georgia, serif",
                 }}
@@ -106,7 +106,7 @@ export default function HeroSection({ backgroundImage }: Props) {
                   fontSize: "clamp(2.5rem, 5.3vw, 5.2rem)",
                   lineHeight: 0.98,
                   fontWeight: 500,
-                  color: "#4a2f25",
+                  color: "#000000",
                   fontFamily: "Georgia, serif",
                 }}
               >
@@ -126,7 +126,7 @@ export default function HeroSection({ backgroundImage }: Props) {
                 style={{
                   width: 92,
                   height: 1,
-                  background: "#b69068",
+                  background: "#f4d400",
                   marginTop: 2,
                 }}
               />
@@ -141,7 +141,7 @@ export default function HeroSection({ backgroundImage }: Props) {
                 style={{
                   fontSize: "clamp(1rem, 1.4vw, 1.22rem)",
                   lineHeight: 1.7,
-                  color: "#5c4335",
+                  color: "#000000",
                   fontStyle: "italic",
                   fontFamily: "Georgia, serif",
                   maxWidth: 430,
@@ -165,8 +165,8 @@ export default function HeroSection({ backgroundImage }: Props) {
                 variant="filled"
                 style={{
                   alignSelf: "flex-start",
-                  background: "#8b5e3c",
-                  color: "#fff7ef",
+                  background: "#f4d400",
+                  color: "#000000",
                   paddingInline: 24,
                   height: 46,
                   fontSize: "0.9rem",

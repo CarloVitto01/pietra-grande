@@ -3,7 +3,6 @@ import { Box, Button, Container, Grid, Image, Stack, Text, Title } from "@mantin
 import {
   IconBed,
   IconChefHat,
-  IconTrees,
   IconChevronRight,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
@@ -22,7 +21,6 @@ type FeatureCardProps = {
 type Props = {
   roomImage: string;
   restaurantImage: string;
-  natureImage: string;
 };
 
 function FeatureCard({
@@ -53,19 +51,19 @@ function FeatureCard({
             display: "flex",
             alignItems: "center",
             gap: 12,
-            marginBottom: 16,
+            marginBottom: 18,
           }}
         >
           <Box
             style={{
               height: 1,
               flex: 1,
-              background: "rgba(103, 76, 55, 0.18)",
+              background: "#f4d400",
             }}
           />
           <Box
             style={{
-              color: "#6e5344",
+              color: "#000000",
               display: "flex",
               alignItems: "center",
             }}
@@ -76,21 +74,21 @@ function FeatureCard({
             style={{
               height: 1,
               flex: 1,
-              background: "rgba(103, 76, 55, 0.18)",
+              background: "#f4d400",
             }}
           />
         </Box>
 
-        <Stack gap={12} align="center">
+        <Stack gap={14} align="center">
           <Title
             order={3}
             ta="center"
             style={{
               fontFamily: "Georgia, serif",
-              fontSize: "clamp(1.55rem, 2vw, 2.15rem)",
-              lineHeight: 1.15,
+              fontSize: "clamp(1.8rem, 2.2vw, 2.6rem)",
+              lineHeight: 1.12,
               fontWeight: 500,
-              color: "#4c3126",
+              color: "#000000",
             }}
           >
             {title}
@@ -99,11 +97,11 @@ function FeatureCard({
           <Text
             ta="center"
             style={{
-              minHeight: 54,
-              maxWidth: 310,
-              fontSize: "clamp(0.98rem, 1.15vw, 1.06rem)",
-              lineHeight: 1.7,
-              color: "#5f473a",
+              minHeight: 58,
+              maxWidth: 420,
+              fontSize: "clamp(1rem, 1.1vw, 1.08rem)",
+              lineHeight: 1.75,
+              color: "#000000",
               fontFamily: "Georgia, serif",
             }}
           >
@@ -115,15 +113,15 @@ function FeatureCard({
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.98 }}
             href={href}
-            radius={0}
+            radius="xl"
             rightSection={<IconChevronRight size={15} stroke={1.8} />}
             style={{
-              background: "#8a5d3b",
-              color: "#fff7ef",
-              height: 44,
-              paddingInline: 20,
-              fontWeight: 600,
-              fontSize: "0.84rem",
+              background: "#f4d400",
+              color: "#000000",
+              height: 46,
+              paddingInline: 24,
+              fontWeight: 700,
+              fontSize: "0.86rem",
               letterSpacing: "0.04em",
               textTransform: "uppercase",
             }}
@@ -131,22 +129,21 @@ function FeatureCard({
             {buttonLabel}
           </Button>
 
-          <motion.div
-            whileHover={{ y: -6 }}
-            transition={{ duration: 0.35 }}
-            style={{ width: "100%", overflow: "hidden" }}
+          <Box
+            style={{
+              width: "100%",
+              overflow: "hidden",
+            }}
           >
-            <motion.div whileHover={{ scale: 1.04 }} transition={{ duration: 0.5 }}>
-              <Image
-                src={image}
-                alt={title}
-                radius={0}
-                h={260}
-                fit="cover"
-                w="100%"
-              />
-            </motion.div>
-          </motion.div>
+            <Image
+              src={image}
+              alt={title}
+              radius={0}
+              h={360}
+              fit="cover"
+              w="100%"
+            />
+          </Box>
         </Stack>
       </Box>
     </motion.div>
@@ -156,7 +153,6 @@ function FeatureCard({
 export default function FeatureCardsSection({
   roomImage,
   restaurantImage,
-  natureImage,
 }: Props) {
   const { t } = useTranslation();
 
@@ -165,44 +161,32 @@ export default function FeatureCardsSection({
       component="section"
       style={{
         background: "#f4eee5",
-        padding: "8px 0 56px",
+        padding: "18px 0 70px",
       }}
     >
       <Container size="xl" px="md">
-        <Grid gutter="xl">
-          <Grid.Col span={{ base: 12, md: 4 }}>
+        <Grid gutter={{ base: 40, md: 36 }} justify="center">
+          <Grid.Col span={{ base: 12, md: 6 }}>
             <FeatureCard
-              icon={<IconBed size={30} stroke={1.7} />}
+              icon={<IconBed size={32} stroke={1.7} />}
               title={t("features.roomsTitle")}
               description={t("features.roomsText")}
               buttonLabel={t("features.roomsButton")}
               image={roomImage}
-              href="#camere"
+              href="/camere"
               delay={0.05}
             />
           </Grid.Col>
 
-          <Grid.Col span={{ base: 12, md: 4 }}>
+          <Grid.Col span={{ base: 12, md: 6 }}>
             <FeatureCard
-              icon={<IconChefHat size={30} stroke={1.7} />}
+              icon={<IconChefHat size={32} stroke={1.7} />}
               title={t("features.restaurantTitle")}
               description={t("features.restaurantText")}
               buttonLabel={t("features.restaurantButton")}
               image={restaurantImage}
-              href="#ristorante"
+              href="/ristorante"
               delay={0.15}
-            />
-          </Grid.Col>
-
-          <Grid.Col span={{ base: 12, md: 4 }}>
-            <FeatureCard
-              icon={<IconTrees size={30} stroke={1.7} />}
-              title={t("features.natureTitle")}
-              description={t("features.natureText")}
-              buttonLabel={t("features.natureButton")}
-              image={natureImage}
-              href="#attivita"
-              delay={0.25}
             />
           </Grid.Col>
         </Grid>

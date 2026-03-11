@@ -26,10 +26,28 @@ export default function SiteNavbar() {
           left: 0,
           width: "100%",
           zIndex: 30,
-          padding: "18px 0",
         }}
       >
-        <Container size="xl" px="md">
+        <Box
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(190deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.92) 58%, rgba(255,255,255,0.55) 82%, rgba(255,255,255,0) 100%)",
+            backdropFilter: "none",
+            pointerEvents: "none",
+          }}
+        />
+
+        <Container
+          size="xl"
+          px="md"
+          style={{
+            position: "relative",
+            zIndex: 2,
+            paddingTop: 18,
+            paddingBottom: 18,
+          }}
+        >
           <Group justify="space-between" align="center" wrap="nowrap">
             <Anchor
               href="/"
@@ -49,7 +67,7 @@ export default function SiteNavbar() {
               />
             </Anchor>
 
-            <Group gap={26} visibleFrom="md">
+            <Group gap={26} visibleFrom="md" style={{alignItems: "center"}}>
               {links.map((link) => (
                 <motion.div
                   key={link.label}
@@ -61,11 +79,10 @@ export default function SiteNavbar() {
                     underline="never"
                     style={{
                       position: "relative",
-                      color: "#f5f1d6",
+                      color: "#1f1a12",
                       fontSize: "0.98rem",
                       fontWeight: 500,
                       fontFamily: "Georgia, serif",
-                      textShadow: "0 1px 8px rgba(0,0,0,0.18)",
                     }}
                   >
                     {link.label}
@@ -78,7 +95,7 @@ export default function SiteNavbar() {
                           width: "100%",
                           height: 2,
                           background: "#f5d300",
-                          boxShadow: "0 0 12px rgba(245, 211, 0, 0.45)",
+                          boxShadow: "0 0 12px rgba(245, 211, 0, 0.35)",
                         }}
                       />
                     )}
@@ -95,7 +112,7 @@ export default function SiteNavbar() {
                 opened={opened}
                 onClick={opened ? close : open}
                 size="sm"
-                color="#f5d300"
+                color="#1f1a12"
               />
             </Group>
           </Group>
@@ -111,7 +128,7 @@ export default function SiteNavbar() {
         withCloseButton={false}
         styles={{
           content: {
-            background: "#111111",
+            background: "#ffffff",
           },
           body: {
             paddingTop: 40,
@@ -126,7 +143,7 @@ export default function SiteNavbar() {
               underline="never"
               onClick={close}
               style={{
-                color: "#f5f1d6",
+                color: "#1f1a12",
                 fontSize: "1.15rem",
                 fontWeight: 500,
                 fontFamily: "Georgia, serif",

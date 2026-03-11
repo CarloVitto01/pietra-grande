@@ -22,14 +22,11 @@ function AnimatedImage({
     <motion.div
       initial={{ opacity: 0, y: 26 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.8, delay }}
-      whileHover={{ y: -5 }}
       style={{ overflow: "hidden" }}
     >
-      <motion.div whileHover={{ scale: 1.03 }} transition={{ duration: 0.45 }}>
-        <Image src={src} alt={alt} radius={0} h={220} fit="cover" />
-      </motion.div>
+      <Image src={src} alt={alt} radius={0} h={220} fit="cover" />
     </motion.div>
   );
 }
@@ -68,7 +65,7 @@ export default function IntroSection({
                     fontSize: "clamp(2rem, 3vw, 3rem)",
                     lineHeight: 1.1,
                     fontWeight: 500,
-                    color: "#4c3126",
+                    color: "#000000",
                     whiteSpace: "nowrap",
                   }}
                 >
@@ -79,7 +76,7 @@ export default function IntroSection({
                   style={{
                     height: 1,
                     flex: 1,
-                    background: "rgba(103, 76, 55, 0.22)",
+                    background: "#f4d400",
                   }}
                 />
               </Box>
@@ -89,7 +86,7 @@ export default function IntroSection({
                   maxWidth: 900,
                   fontSize: "clamp(1rem, 1.35vw, 1.12rem)",
                   lineHeight: 1.9,
-                  color: "#5e473b",
+                  color: "#000000",
                   fontFamily: "Georgia, serif",
                 }}
               >
