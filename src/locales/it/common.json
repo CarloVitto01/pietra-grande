@@ -31,5 +31,24 @@
     "title": "Vivi la natura, gusta la tradizione",
     "text": "Esperienze autentiche, tra buon cibo e paesaggi incantevoli.",
     "button": "Prenota la tua vacanza"
+  },
+  "footer": {
+    "description": "Un luogo autentico immerso nella natura, dove accoglienza, tranquillità e sapori del territorio si incontrano per offrire un’esperienza di soggiorno calda e raffinata.",
+    "explore": "Esplora",
+    "contactsTitle": "Contatti",
+    "address": "Via Pantaniello 4, 73028 Otranto (LE)",
+    "phone": "+39 328 761 2770",
+    "email": "bresciamaria@cenaspec.it",
+    "rights": "Tutti i diritti riservati.",
+    "createdBy": "Created by Photo & Vision"
+  },
+  "chefHighlight": {
+    "imageAlt": "La nostra cuoca",
+    "eyebrow": "Tradizione • Passione • Territorio",
+    "titleLine1": "La cucina ha un volto,",
+    "titleLine2": "e racconta una storia vera",
+    "text": "Ogni piatto nasce da mani esperte, ingredienti genuini e da una profonda attenzione per i sapori della tradizione. La nostra cuoca porta in tavola il calore della cucina autentica, trasformando ogni esperienza in un ricordo da vivere con lentezza.",
+    "quote": "Una cucina sincera, fatta di territorio, stagionalità e cura.",
+    "button": "Scopri il ristorante"
   }
 }

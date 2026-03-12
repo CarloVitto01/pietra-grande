@@ -1,12 +1,15 @@
 import { Box, Button, Container, Grid, Image, Stack, Text, Title } from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   chefImage: string;
 };
 
 export default function ChefHighlightSection({ chefImage }: Props) {
+  const { t } = useTranslation();
+
   return (
     <Box
       component="section"
@@ -31,7 +34,7 @@ export default function ChefHighlightSection({ chefImage }: Props) {
               >
                 <Image
                   src={chefImage}
-                  alt="La nostra cuoca"
+                  alt={t("chefHighlight.imageAlt")}
                   radius={0}
                   h={560}
                   fit="cover"
@@ -57,7 +60,7 @@ export default function ChefHighlightSection({ chefImage }: Props) {
                     textTransform: "uppercase",
                   }}
                 >
-                  Tradizione • Passione • Territorio
+                  {t("chefHighlight.eyebrow")}
                 </Text>
 
                 <Title
@@ -70,9 +73,9 @@ export default function ChefHighlightSection({ chefImage }: Props) {
                     color: "#111111",
                   }}
                 >
-                  La cucina ha un volto,
+                  {t("chefHighlight.titleLine1")}
                   <br />
-                  e racconta una storia vera
+                  {t("chefHighlight.titleLine2")}
                 </Title>
 
                 <Box
@@ -91,10 +94,7 @@ export default function ChefHighlightSection({ chefImage }: Props) {
                     color: "#1f1a12",
                   }}
                 >
-                  Ogni piatto nasce da mani esperte, ingredienti genuini e da una
-                  profonda attenzione per i sapori della tradizione. La nostra
-                  cuoca porta in tavola il calore della cucina autentica,
-                  trasformando ogni esperienza in un ricordo da vivere con lentezza.
+                  {t("chefHighlight.text")}
                 </Text>
 
                 <Text
@@ -106,7 +106,7 @@ export default function ChefHighlightSection({ chefImage }: Props) {
                     fontStyle: "italic",
                   }}
                 >
-                  Una cucina sincera, fatta di territorio, stagionalità e cura.
+                  {t("chefHighlight.quote")}
                 </Text>
 
                 <Box pt={6}>
@@ -128,7 +128,7 @@ export default function ChefHighlightSection({ chefImage }: Props) {
                       textTransform: "uppercase",
                     }}
                   >
-                    Scopri il ristorante
+                    {t("chefHighlight.button")}
                   </Button>
                 </Box>
               </Stack>

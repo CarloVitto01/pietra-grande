@@ -1,7 +1,5 @@
-import { Box, Button, Container, Grid, Image, Stack, Text, Title } from "@mantine/core";
-import { IconChevronRight } from "@tabler/icons-react";
+import { Box, Container, Grid, Image, Stack, Text, Title } from "@mantine/core";
 import FadeIn from "../common/FadeIn";
-import { motion } from "framer-motion";
 
 type Props = {
   chefImage: string;
@@ -47,29 +45,6 @@ export default function RestaurantIntroSection({ chefImage }: Props) {
                   prodotti del territorio e ricette autentiche, preparate con cura
                   e passione per offrire un’esperienza calda e sincera.
                 </Text>
-
-                <Box pt={4}>
-                  <Button
-                    component={motion.a}
-                    whileHover={{ y: -1 }}
-                    whileTap={{ scale: 0.985 }}
-                    href="#menu-ristorante"
-                    radius="xl"
-                    rightSection={<IconChevronRight size={16} stroke={1.8} />}
-                    style={{
-                      background: "#f5d300",
-                      color: "#111111",
-                      height: 48,
-                      paddingInline: 26,
-                      fontWeight: 700,
-                      fontSize: "0.9rem",
-                      letterSpacing: "0.05em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Scopri il menù
-                  </Button>
-                </Box>
               </Stack>
             </FadeIn>
           </Grid.Col>

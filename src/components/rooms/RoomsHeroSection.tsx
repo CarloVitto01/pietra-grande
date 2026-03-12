@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack, Text, Title } from "@mantine/core";
+import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import SiteNavbar from "../common/SiteNavbar";
@@ -154,27 +154,6 @@ export default function RoomsHeroSection({ backgroundImage }: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.66 }}
             >
-              <Button
-                component={motion.a}
-                whileHover={{ y: -2, scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                href="#galleria-camere"
-                radius={0}
-                style={{
-                  alignSelf: "flex-start",
-                  background: "#8b5e3c",
-                  color: "#fff7ef",
-                  paddingInline: 24,
-                  height: 46,
-                  fontSize: "0.9rem",
-                  fontWeight: 600,
-                  letterSpacing: "0.05em",
-                  textTransform: "uppercase",
-                  boxShadow: "0 8px 20px rgba(0,0,0,0.14)",
-                }}
-              >
-                Scopri la galleria
-              </Button>
             </motion.div>
           </Stack>
         </Box>

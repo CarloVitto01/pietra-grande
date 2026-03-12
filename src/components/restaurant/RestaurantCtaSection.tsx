@@ -1,13 +1,34 @@
-import { Box, Button, Container, Grid, Image, Stack, Text, Title } from "@mantine/core";
+import { useEffect, useState } from "react";
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  Stack,
+  Text,
+  Title,
+} from "@mantine/core";
 import { IconChevronRight } from "@tabler/icons-react";
 import FadeIn from "../common/FadeIn";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {
-  image: string;
+  images: string[];
 };
 
-export default function RestaurantCtaSection({ image }: Props) {
+export default function RestaurantCtaSection({ images }: Props) {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    if (!images || images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images]);
+
   return (
     <Box
       component="section"
@@ -61,7 +82,9 @@ export default function RestaurantCtaSection({ image }: Props) {
                       component={motion.a}
                       whileHover={{ y: -1 }}
                       whileTap={{ scale: 0.985 }}
-                      href="#contatti"
+                      href="https://wa.me/393287612770?text=Salve%2C%20vorrei%20prenotare%20un%20tavolo%20da%20Pietra%20Grande."
+                      target="_blank"
+                      rel="noopener noreferrer"
                       radius="xl"
                       rightSection={<IconChevronRight size={16} stroke={1.8} />}
                       style={{
@@ -85,13 +108,43 @@ export default function RestaurantCtaSection({ image }: Props) {
 
           <Grid.Col span={{ base: 12, md: 6 }}>
             <FadeIn delay={0.05}>
-              <Image
-                src={image}
-                alt="Interno del ristorante"
-                radius={0}
-                h={420}
-                fit="cover"
-              />
+              <Box
+                style={{
+                  position: "relative",
+                  height: 420,
+                  overflow: "hidden",
+                }}
+              >
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={activeIndex}
+                    src={images[activeIndex]}
+                    alt={`Ristorante ${activeIndex + 1}`}
+                    initial={{ opacity: 0, scale: 1.04 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 1.02 }}
+                    transition={{ duration: 1.1, ease: "easeInOut" }}
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      display: "block",
+                    }}
+                  />
+                </AnimatePresence>
+
+                <Box
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background:
+                      "linear-gradient(180deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.16) 100%)",
+                    pointerEvents: "none",
+                  }}
+                />
+              </Box>
             </FadeIn>
           </Grid.Col>
         </Grid>

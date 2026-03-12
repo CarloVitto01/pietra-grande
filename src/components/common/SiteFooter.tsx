@@ -5,18 +5,15 @@ import {
   Divider,
   Grid,
   Group,
+  Image,
   Stack,
   Text,
   Title,
 } from "@mantine/core";
 import { motion } from "framer-motion";
-import {
-  IconMapPin,
-  IconPhone,
-  IconMail,
-  IconClock,
-} from "@tabler/icons-react";
+import { IconMapPin, IconPhone, IconMail } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
+import logo from "../../assets/images/logo.svg";
 
 function FooterLink({
   href,
@@ -110,19 +107,8 @@ export default function SiteFooter() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8 }}
             >
-              <Stack gap={14}>
-                <Text
-                  style={{
-                    color: "#f7ebdf",
-                    fontFamily: "Georgia, serif",
-                    fontSize: "clamp(1.9rem, 2.4vw, 2.8rem)",
-                    lineHeight: 1,
-                    letterSpacing: "0.04em",
-                    fontWeight: 500,
-                  }}
-                >
-                  PIETRA GRANDE
-                </Text>
+              <Stack gap={16}>
+                <Image src={logo} alt="Pietra Grande" w={220} fit="contain" />
 
                 <Text
                   style={{
@@ -202,20 +188,13 @@ export default function SiteFooter() {
                     icon={<IconMail size={18} stroke={1.8} />}
                     text={t("footer.email")}
                   />
-                  <FooterInfoRow
-                    icon={<IconClock size={18} stroke={1.8} />}
-                    text={t("footer.hours")}
-                  />
                 </Stack>
               </Stack>
             </motion.div>
           </Grid.Col>
         </Grid>
 
-        <Divider
-          my={28}
-          color="rgba(255,255,255,0.12)"
-        />
+        <Divider my={28} color="rgba(255,255,255,0.12)" />
 
         <Group justify="space-between" gap="md" wrap="wrap">
           <Text
@@ -235,7 +214,7 @@ export default function SiteFooter() {
               fontFamily: "Georgia, serif",
             }}
           >
-            Photo & Vision
+            {t("footer.createdBy")}
           </Text>
         </Group>
       </Container>

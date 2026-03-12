@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack, Text, Title } from "@mantine/core";
+import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import SiteNavbar from "../common/SiteNavbar";
@@ -156,28 +156,6 @@ export default function HeroSection({ backgroundImage }: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.62 }}
             >
-              <Button
-                component={motion.button}
-                whileHover={{ y: -2, scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                size="md"
-                radius={0}
-                variant="filled"
-                style={{
-                  alignSelf: "flex-start",
-                  background: "#f4d400",
-                  color: "#000000",
-                  paddingInline: 24,
-                  height: 46,
-                  fontSize: "0.9rem",
-                  fontWeight: 600,
-                  letterSpacing: "0.05em",
-                  textTransform: "uppercase",
-                  boxShadow: "0 8px 20px rgba(0,0,0,0.10)",
-                }}
-              >
-                {t("hero.cta")}
-              </Button>
             </motion.div>
           </Stack>
         </Box>

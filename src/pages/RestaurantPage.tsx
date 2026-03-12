@@ -14,7 +14,10 @@ import highlight3 from "../assets/images/piatto-3.jpg";
 import gallery1 from "../assets/images/piatto-4.jpg";
 import gallery2 from "../assets/images/piatto-5.jpg";
 import gallery3 from "../assets/images/piatto-6.jpg";
-import ctaImage from "../assets/images/hero.jpg";
+import img1 from "../assets/images/piatto-7.jpg";
+import img2 from "../assets/images/piatto-8.jpg";
+import img3 from "../assets/images/piatto-9.jpg";
+import img4 from "../assets/images/piatto-10.jpg";  
 
 export default function RestaurantPage() {
   return (
@@ -37,7 +40,9 @@ export default function RestaurantPage() {
         image3={gallery3}
       />
 
-      <RestaurantCtaSection image={ctaImage} />
+      <RestaurantCtaSection
+        images={[img1, img2, img3, img4]}
+      />
 
       <SiteFooter />
     </Box>

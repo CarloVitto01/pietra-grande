@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack, Text, Title } from "@mantine/core";
+import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import { motion } from "framer-motion";
 import SiteNavbar from "../common/SiteNavbar";
 
@@ -19,16 +19,15 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
       }}
     >
       <motion.div
-        initial={{ opacity: 0.92 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.55, ease: "easeOut" }}
+        initial={{ scale: 1.04 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.4, ease: "easeOut" }}
         style={{
           position: "absolute",
           inset: 0,
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          willChange: "opacity",
         }}
       />
 
@@ -37,7 +36,7 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(90deg, rgba(74,46,28,0.52) 0%, rgba(74,46,28,0.34) 30%, rgba(0,0,0,0.06) 60%, rgba(0,0,0,0.18) 100%)",
+            "linear-gradient(90deg, rgba(74,46,28,0.66) 0%, rgba(74,46,28,0.52) 32%, rgba(0,0,0,0.10) 62%, rgba(0,0,0,0.18) 100%)",
           zIndex: 1,
         }}
       />
@@ -47,7 +46,7 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.14) 100%)",
+            "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.16) 100%)",
           zIndex: 2,
         }}
       />
@@ -63,16 +62,21 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
           minHeight: "78vh",
           display: "flex",
           alignItems: "center",
-          paddingTop: 155,
-          paddingBottom: 70,
+          paddingTop: 120,
+          paddingBottom: 72,
         }}
       >
-        <Box style={{ width: "100%", maxWidth: 620 }}>
-          <Stack gap={16}>
+        <Box
+          style={{
+            width: "100%",
+            maxWidth: 620,
+          }}
+        >
+          <Stack gap={18}>
             <motion.div
-              initial={{ opacity: 0, y: 14 }}
+              initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.42, delay: 0.05, ease: "easeOut" }}
+              transition={{ duration: 0.7, delay: 0.15 }}
             >
               <Title
                 order={1}
@@ -81,7 +85,7 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
                   fontSize: "clamp(2.4rem, 5vw, 4.8rem)",
                   lineHeight: 1,
                   fontWeight: 500,
-                  color: "#fff8ea",
+                  color: "#f4eadf",
                   fontStyle: "italic",
                 }}
               >
@@ -90,32 +94,32 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scaleX: 0.85 }}
+              initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: 1, scaleX: 1 }}
-              transition={{ duration: 0.35, delay: 0.1, ease: "easeOut" }}
+              transition={{ duration: 0.7, delay: 0.3 }}
               style={{ transformOrigin: "left center" }}
             >
               <Box
                 style={{
                   width: 360,
                   maxWidth: "100%",
-                  height: 2,
-                  background: "#f5d300",
+                  height: 1,
+                  background: "rgba(245, 228, 209, 0.55)",
                 }}
               />
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 12 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.42, delay: 0.14, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.42 }}
             >
               <Text
                 style={{
                   fontFamily: "Georgia, serif",
-                  fontSize: "clamp(1.2rem, 1.8vw, 1.8rem)",
-                  lineHeight: 1.45,
-                  color: "#fff5de",
+                  fontSize: "clamp(1.2rem, 1.8vw, 1.75rem)",
+                  lineHeight: 1.5,
+                  color: "#f4eadf",
                 }}
               >
                 Delizie autentiche della nostra terra
@@ -123,30 +127,30 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.18, ease: "easeOut" }}
+              transition={{ duration: 0.85, delay: 0.54 }}
             >
-              <Button
-                component={motion.a}
-                whileHover={{ y: -1 }}
-                whileTap={{ scale: 0.985 }}
-                href="#menu-ristorante"
-                radius="xl"
+              <Text
                 style={{
-                  alignSelf: "flex-start",
-                  background: "#f5d300",
-                  color: "#111111",
-                  height: 46,
-                  paddingInline: 24,
-                  fontSize: "0.9rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.05em",
-                  textTransform: "uppercase",
+                  fontFamily: "Georgia, serif",
+                  fontSize: "clamp(1rem, 1.2vw, 1.15rem)",
+                  lineHeight: 1.9,
+                  color: "rgba(249, 239, 228, 0.92)",
+                  maxWidth: 500,
                 }}
               >
-                Scopri il menù
-              </Button>
+                Il nostro ristorante propone una cucina sincera e territoriale,
+                fatta di ingredienti genuini, ricette della tradizione e un’atmosfera
+                calda che rende ogni pranzo o cena un’esperienza autentica.
+              </Text>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.66 }}
+            >
             </motion.div>
           </Stack>
         </Box>

@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import RoomsPage from "./pages/RoomsPage";
 import ScrollToTop from "./components/common/ScrollToTop";
 import RestaurantPage from "./pages/RestaurantPage";
+import ContactsPage from "./pages/ContactsPage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/camere" element={<RoomsPage />} />
         <Route path="/ristorante" element={<RestaurantPage />} />
+        <Route path="/contatti" element={<ContactsPage />} />
       </Routes>
     </>
   );

@@ -10,7 +10,7 @@ import intro2 from "../assets/images/intro-2.jpg";
 import intro3 from "../assets/images/room.jpg";
 import roomImage from "../assets/images/room.jpg";
 import restaurantImage from "../assets/images/piatto-3.jpg";
-import ctaImage from "../assets/images/room.jpg";
+import ctaImage from "../assets/images/intro-1.jpg";
 import SiteFooter from "../components/common/SiteFooter";
 import ChefHighlightSection from "../components/home/ChefHighlightSection";
 import chefImage from "../assets/images/cuoca.jpg";

@@ -6,8 +6,8 @@
     "contacts": "Contacts"
   },
   "hero": {
-    "welcome": "Welcome",
-    "titleLine1": "to Agriturismo",
+    "welcome": "Welcome to",
+    "titleLine1": "Agriturismo",
     "titleLine2": "Pietra Grande",
     "subtitle": "A corner of paradise among nature and tradition.",
     "cta": "Discover more"
@@ -31,5 +31,24 @@
     "title": "Experience nature, taste tradition",
     "text": "Authentic experiences, great food and enchanting landscapes.",
     "button": "Book your stay"
+  },
+  "footer": {
+    "description": "An authentic place surrounded by nature, where hospitality, tranquility and the flavors of the land come together to offer a warm and refined stay.",
+    "explore": "Explore",
+    "contactsTitle": "Contacts",
+    "address": "Via Pantaniello 4, 73028 Otranto (LE)",
+    "phone": "+39 328 761 2770",
+    "email": "bresciamaria@cenaspec.it",
+    "rights": "All rights reserved.",
+    "createdBy": "Created by Photo & Vision"
+  },
+  "chefHighlight": {
+    "imageAlt": "Our cook",
+    "eyebrow": "Tradition • Passion • Territory",
+    "titleLine1": "Our cuisine has a face,",
+    "titleLine2": "and tells a true story",
+    "text": "Every dish is born from experienced hands, genuine ingredients and deep care for the flavors of tradition. Our cook brings the warmth of authentic cuisine to the table, turning every experience into a memory to be savored slowly.",
+    "quote": "A sincere cuisine shaped by local roots, seasonality and care.",
+    "button": "Discover the restaurant"
   }
 }

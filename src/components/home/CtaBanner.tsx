@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack, Text, Title } from "@mantine/core";
+import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -106,28 +106,6 @@ export default function CtaBanner({ backgroundImage }: Props) {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.24 }}
           >
-            <Button
-              component={motion.a}
-              whileHover={{ y: -2, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              href="#contatti"
-              size="md"
-              radius={0}
-              style={{
-                marginTop: 6,
-                background: "#8b5e3c",
-                color: "#fff7ef",
-                paddingInline: 28,
-                height: 46,
-                fontSize: "0.9rem",
-                fontWeight: 600,
-                letterSpacing: "0.05em",
-                textTransform: "uppercase",
-                boxShadow: "0 10px 26px rgba(0,0,0,0.16)",
-              }}
-            >
-              {t("ctaBanner.button")}
-            </Button>
           </motion.div>
         </Stack>
       </Container>
