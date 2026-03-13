@@ -6,19 +6,20 @@ import {
   Stack,
   Text,
   Title,
-
 } from "@mantine/core";
-import { IconBrandWhatsapp,  } from "@tabler/icons-react";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 import FadeIn from "../common/FadeIn";
-
 
 type Props = {
   mapEmbedUrl?: string;
 };
 
 export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
-  const whatsappUrl =
-    "https://wa.me/393331234567?text=Ciao%20Pietra%20Grande%2C%20vorrei%20avere%20informazioni.";
+  const { t } = useTranslation();
+
+  const whatsappMessage = encodeURIComponent(t("contactsMap.whatsappMessage"));
+  const whatsappUrl = `https://wa.me/393287612770?text=${whatsappMessage}`;
 
   return (
     <Box
@@ -48,7 +49,7 @@ export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
                     style={{ border: 0, display: "block" }}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Mappa Pietra Grande"
+                    title={t("contactsMap.mapTitle")}
                   />
                 ) : (
                   <Box
@@ -70,8 +71,7 @@ export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
                         maxWidth: 360,
                       }}
                     >
-                      Inserisci l’URL embed della mappa per visualizzare la posizione
-                      dell’agriturismo.
+                      {t("contactsMap.mapPlaceholder")}
                     </Text>
                   </Box>
                 )}
@@ -92,7 +92,7 @@ export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
                     color: "#111111",
                   }}
                 >
-                  Contattaci
+                  {t("contactsMap.title")}
                 </Title>
 
                 <Text
@@ -104,8 +104,7 @@ export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
                     maxWidth: 560,
                   }}
                 >
-                  Per qualsiasi domanda o per prenotare il tuo soggiorno, scrivici
-                  tramite il form oppure contattaci direttamente su WhatsApp.
+                  {t("contactsMap.text")}
                 </Text>
 
                 <Button
@@ -127,7 +126,7 @@ export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
                     textTransform: "uppercase",
                   }}
                 >
-                  Scrivici su WhatsApp
+                  {t("contactsMap.button")}
                 </Button>
 
                 <Box
@@ -135,8 +134,7 @@ export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
                   style={{
                     marginTop: 6,
                   }}
-                >
-                </Box>
+                />
               </Stack>
             </FadeIn>
           </Grid.Col>

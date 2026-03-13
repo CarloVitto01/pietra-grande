@@ -1,5 +1,6 @@
 import { ActionIcon, Box, Container, Grid, Image, Stack, Text, Title } from "@mantine/core";
 import { IconBrandFacebook, IconBrandInstagram, IconMail } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 import FadeIn from "../common/FadeIn";
 
 type Props = {
@@ -7,6 +8,8 @@ type Props = {
 };
 
 export default function ContactsSocialSection({ image }: Props) {
+  const { t } = useTranslation();
+
   return (
     <Box
       component="section"
@@ -40,7 +43,7 @@ export default function ContactsSocialSection({ image }: Props) {
                       color: "#111111",
                     }}
                   >
-                    Seguici sui social
+                    {t("contactsSocial.title")}
                   </Title>
 
                   <Text
@@ -51,8 +54,7 @@ export default function ContactsSocialSection({ image }: Props) {
                       color: "#1f1a12",
                     }}
                   >
-                    Seguici sui nostri social per rimanere aggiornato su novità,
-                    esperienze, piatti e offerte speciali.
+                    {t("contactsSocial.text")}
                   </Text>
 
                   <Box
@@ -82,7 +84,7 @@ export default function ContactsSocialSection({ image }: Props) {
             <FadeIn delay={0.05}>
               <Image
                 src={image}
-                alt="Agriturismo Pietra Grande"
+                alt={t("contactsSocial.imageAlt")}
                 radius={0}
                 h={320}
                 fit="cover"

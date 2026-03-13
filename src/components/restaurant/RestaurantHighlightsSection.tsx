@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Image, Stack, Title } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import FadeIn from "../common/FadeIn";
 
 type Highlight = {
@@ -7,7 +8,7 @@ type Highlight = {
 };
 
 type Props = {
-  items: Highlight[];
+  items: Omit<Highlight, "title">[];
 };
 
 function HighlightCard({ image, title, delay }: Highlight & { delay: number }) {
@@ -62,6 +63,13 @@ function HighlightCard({ image, title, delay }: Highlight & { delay: number }) {
 }
 
 export default function RestaurantHighlightsSection({ items }: Props) {
+  const { t } = useTranslation();
+
+  const translatedItems: Highlight[] = items.map((item, index) => ({
+    ...item,
+    title: t(`restaurantHighlights.items.${index}`),
+  }));
+
   return (
     <Box
       component="section"
@@ -73,8 +81,8 @@ export default function RestaurantHighlightsSection({ items }: Props) {
     >
       <Container size="xl" px="md">
         <Grid gutter={{ base: 34, md: 24 }}>
-          {items.map((item, index) => (
-            <Grid.Col key={item.title} span={{ base: 12, md: 4 }}>
+          {translatedItems.map((item, index) => (
+            <Grid.Col key={`${item.title}-${index}`} span={{ base: 12, md: 4 }}>
               <HighlightCard
                 image={item.image}
                 title={item.title}

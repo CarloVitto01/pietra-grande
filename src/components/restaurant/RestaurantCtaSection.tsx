@@ -11,12 +11,14 @@ import {
 import { IconChevronRight } from "@tabler/icons-react";
 import FadeIn from "../common/FadeIn";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   images: string[];
 };
 
 export default function RestaurantCtaSection({ images }: Props) {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -62,7 +64,7 @@ export default function RestaurantCtaSection({ images }: Props) {
                       color: "#111111",
                     }}
                   >
-                    Il Nostro Ristorante
+                    {t("restaurantCta.title")}
                   </Title>
 
                   <Text
@@ -73,8 +75,7 @@ export default function RestaurantCtaSection({ images }: Props) {
                       color: "#1f1a12",
                     }}
                   >
-                    Un ambiente caldo e accogliente, dove gustare piatti autentici
-                    della tradizione, preparati con ingredienti freschi e locali.
+                    {t("restaurantCta.text")}
                   </Text>
 
                   <Box pt={4}>
@@ -98,7 +99,7 @@ export default function RestaurantCtaSection({ images }: Props) {
                         textTransform: "uppercase",
                       }}
                     >
-                      Prenota il tuo tavolo
+                      {t("restaurantCta.button")}
                     </Button>
                   </Box>
                 </Stack>
@@ -119,7 +120,7 @@ export default function RestaurantCtaSection({ images }: Props) {
                   <motion.img
                     key={activeIndex}
                     src={images[activeIndex]}
-                    alt={`Ristorante ${activeIndex + 1}`}
+                    alt={`${t("restaurantCta.imageAlt")} ${activeIndex + 1}`}
                     initial={{ opacity: 0, scale: 1.04 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 1.02 }}

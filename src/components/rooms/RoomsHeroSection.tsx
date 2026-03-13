@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default function RoomsHeroSection({ backgroundImage }: Props) {
-  useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -92,7 +92,7 @@ export default function RoomsHeroSection({ backgroundImage }: Props) {
                   fontStyle: "italic",
                 }}
               >
-                Le nostre camere
+                {t("roomsHero.title")}
               </Title>
             </motion.div>
 
@@ -125,7 +125,7 @@ export default function RoomsHeroSection({ backgroundImage }: Props) {
                   color: "#f4eadf",
                 }}
               >
-                Comfort e charme nel cuore della campagna.
+                {t("roomsHero.subtitle")}
               </Text>
             </motion.div>
 
@@ -143,9 +143,7 @@ export default function RoomsHeroSection({ backgroundImage }: Props) {
                   maxWidth: 470,
                 }}
               >
-                Le camere del nostro agriturismo sono arredate con gusto e dotate
-                di tutti i comfort per rendere il tuo soggiorno rilassante,
-                piacevole e autentico.
+                {t("roomsHero.text")}
               </Text>
             </motion.div>
 
@@ -153,8 +151,7 @@ export default function RoomsHeroSection({ backgroundImage }: Props) {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.66 }}
-            >
-            </motion.div>
+            />
           </Stack>
         </Box>
       </Container>

@@ -40,7 +40,7 @@
     "phone": "+39 328 761 2770",
     "email": "bresciamaria@cenaspec.it",
     "rights": "Tutti i diritti riservati.",
-    "createdBy": "Created by Photo & Vision"
+    "createdBy": "Created by"
   },
   "chefHighlight": {
     "imageAlt": "La nostra cuoca",
@@ -50,5 +50,211 @@
     "text": "Ogni piatto nasce da mani esperte, ingredienti genuini e da una profonda attenzione per i sapori della tradizione. La nostra cuoca porta in tavola il calore della cucina autentica, trasformando ogni esperienza in un ricordo da vivere con lentezza.",
     "quote": "Una cucina sincera, fatta di territorio, stagionalità e cura.",
     "button": "Scopri il ristorante"
+  },
+  "roomsHero": {
+    "title": "Le nostre camere",
+    "subtitle": "Comfort e charme nel cuore della campagna.",
+    "text": "Le camere del nostro agriturismo sono arredate con gusto e dotate di tutti i comfort per rendere il tuo soggiorno rilassante, piacevole e autentico."
+  },
+  "roomsGallery": {
+    "title": "Le Nostre Camere",
+    "subtitle": "Ambienti accoglienti, dettagli curati e comfort essenziale per un soggiorno autentico e rilassante nel cuore della campagna.",
+    "eyebrow": "Camere & Relax",
+    "button": "Prenota la tua camera",
+    "features": {
+      "wifi": "Wi-Fi gratuito",
+      "airConditioning": "Aria condizionata",
+      "tv": "TV a schermo piatto",
+      "privateBathroom": "Bagno privato con doccia"
+    },
+    "slides": [
+      {
+        "alt": "Camera agriturismo vista principale",
+        "title": "Atmosfera autentica e rilassante",
+        "description": "Camere luminose e accoglienti, pensate per offrire un soggiorno piacevole tra semplicità, calore e comfort."
+      },
+      {
+        "alt": "Dettagli interni della camera agriturismo",
+        "title": "Spazi curati nei dettagli",
+        "description": "Arredi essenziali, ambienti ordinati e una sensazione di quiete che accompagna ogni momento del soggiorno."
+      },
+      {
+        "alt": "Bagno privato della camera agriturismo",
+        "title": "Comfort pratico e funzionale",
+        "description": "Ogni ambiente è studiato per garantire praticità e benessere, con servizi privati e tutto il necessario per sentirsi a proprio agio."
+      }
+    ]
+  },
+  "roomsMasonry": {
+    "title": "Ambienti e Dettagli",
+    "subtitle": "Una selezione di immagini per raccontare gli spazi, l’atmosfera e il comfort delle nostre camere.",
+    "items": [
+      "Vista principale della camera",
+      "Dettagli e zona notte",
+      "Bagno privato",
+      "Dettagli del bagno",
+      "Ambiente interno",
+      "Zona relax della camera"
+    ]
+  },
+  "restaurantHero": {
+    "title": "Il nostro ristorante",
+    "subtitle": "Delizie autentiche della nostra terra",
+    "text": "Il nostro ristorante propone una cucina sincera e territoriale, fatta di ingredienti genuini, ricette della tradizione e un’atmosfera calda che rende ogni pranzo o cena un’esperienza autentica."
+  },
+  "restaurantHighlights": {
+    "items": [
+      "Sapori del territorio",
+      "Tradizione autentica",
+      "Accoglienza genuina"
+    ]
+  },
+  "restaurantIntro": {
+    "title": "Cucina autentica e sapori genuini",
+    "text": "Il ristorante di Pietra Grande ti invita a scoprire i veri sapori della tradizione. La nostra cucina valorizza ingredienti freschi, prodotti del territorio e ricette autentiche, preparate con cura e passione per offrire un’esperienza calda e sincera.",
+    "imageAlt": "La cuoca del ristorante"
+  },
+  "restaurantCta": {
+    "title": "Il Nostro Ristorante",
+    "text": "Un ambiente caldo e accogliente, dove gustare piatti autentici della tradizione, preparati con ingredienti freschi e locali.",
+    "button": "Prenota il tuo tavolo",
+    "imageAlt": "Ristorante"
+  },
+  "contactsHero": {
+    "title": "Contatti",
+    "subtitle": "Ti aspettiamo a Otranto"
+  },
+  "contactsInfo": {
+    "emailTitle": "Email",
+    "emailValue": "bresciamaria@cenaspec.it",
+    "phoneTitle": "Telefono",
+    "phoneValue": "+39 328 761 2770",
+    "addressTitle": "Indirizzo",
+    "addressValue": "Via Pagliarone SNC, 73028 Otranto (LE)"
+  },
+  "contactsMap": {
+    "mapTitle": "Mappa Pietra Grande",
+    "mapPlaceholder": "Inserisci l’URL embed della mappa per visualizzare la posizione dell’agriturismo.",
+    "title": "Contattaci",
+    "text": "Per qualsiasi domanda o per prenotare il tuo soggiorno, contattaci direttamente su WhatsApp.",
+    "button": "Scrivici su WhatsApp",
+    "whatsappMessage": "Ciao Pietra Grande, vorrei avere informazioni."
+  },
+  "contactsSocial": {
+    "title": "Seguici sui social",
+    "text": "Seguici sui nostri social per rimanere aggiornato su novità, esperienze, piatti e offerte speciali.",
+    "imageAlt": "Agriturismo Pietra Grande"
+  },
+  "privacy": {
+  "title": "Privacy Policy",
+  "updated": "Ultimo aggiornamento: 13 marzo 2026",
+  "sections": {
+    "owner": {
+      "title": "1. Titolare del trattamento",
+      "text1": "Il Titolare del trattamento è Pietra Grande, con sede in Via Pagliarone SNC, 73028 Otranto (LE).",
+      "text2": "Email di contatto: bresciamaria@cenaspec.it",
+      "text3": "Telefono: +39 328 761 2770"
+    },
+    "dataCollected": {
+      "title": "2. Tipologie di dati raccolti",
+      "intro": "Attraverso questo sito possono essere raccolti:",
+      "item1": "- dati identificativi e di contatto forniti volontariamente dall’utente, come nome, email, numero di telefono e contenuto del messaggio;",
+      "item2": "- dati tecnici di navigazione, come indirizzo IP, tipo di browser, dispositivo, orario di accesso e log tecnici;",
+      "item3": "- eventuali dati raccolti tramite cookie o strumenti analoghi, come descritto nella Cookie Policy."
+    },
+    "purposes": {
+      "title": "3. Finalità del trattamento",
+      "intro": "I dati personali sono trattati per:",
+      "item1": "- rispondere a richieste di informazioni o prenotazioni;",
+      "item2": "- gestire i contatti con l’utente;",
+      "item3": "- garantire il corretto funzionamento tecnico e la sicurezza del sito;",
+      "item4": "- adempiere a obblighi di legge;",
+      "item5": "- raccogliere statistiche anonime o aggregate, ove applicabile;",
+      "item6": "- svolgere eventuali attività di marketing solo previo consenso, se effettivamente presenti."
+    },
+    "legalBasis": {
+      "title": "4. Base giuridica del trattamento",
+      "intro": "Il trattamento può basarsi:",
+      "item1": "- sull’esecuzione di misure precontrattuali o contrattuali, quando l’utente richiede informazioni o una prenotazione;",
+      "item2": "- sull’adempimento di obblighi legali;",
+      "item3": "- sul legittimo interesse del Titolare, per sicurezza del sito, prevenzione abusi e gestione tecnica;",
+      "item4": "- sul consenso dell’utente, nei casi previsti, ad esempio per cookie non tecnici o comunicazioni promozionali."
+    },
+    "processingMethods": {
+      "title": "5. Modalità di trattamento",
+      "text": "I dati sono trattati con strumenti informatici e organizzativi adeguati a garantirne sicurezza, integrità e riservatezza, con misure ragionevoli per prevenire accessi non autorizzati, perdita, divulgazione o uso improprio."
+    },
+    "recipients": {
+      "title": "6. Destinatari dei dati",
+      "text1": "I dati possono essere trattati da soggetti autorizzati dal Titolare e, se necessario, da fornitori esterni che supportano il funzionamento del sito o dei servizi connessi, come hosting provider, servizi email, manutenzione tecnica o strumenti di analisi.",
+      "text2": "Tali soggetti, ove richiesto, operano in qualità di responsabili del trattamento."
+    },
+    "transfer": {
+      "title": "7. Trasferimento dei dati",
+      "text": "Alcuni fornitori tecnici possono trattare dati anche fuori dallo Spazio Economico Europeo. In tali casi, il trasferimento avviene nel rispetto della normativa applicabile e con adeguate garanzie."
+    },
+    "retention": {
+      "title": "8. Periodo di conservazione",
+      "text": "I dati sono conservati per il tempo strettamente necessario a perseguire le finalità per cui sono stati raccolti, salvo diversi obblighi di legge o necessità di tutela dei diritti del Titolare."
+    },
+    "rights": {
+      "title": "9. Diritti dell’interessato",
+      "text1": "L’utente può esercitare i diritti previsti dalla normativa privacy, inclusi accesso, rettifica, cancellazione, limitazione, opposizione, portabilità e revoca del consenso, ove applicabile.",
+      "text2": "Le richieste possono essere inviate a: bresciamaria@cenaspec.it"
+    },
+    "complaint": {
+      "title": "10. Reclamo all’autorità di controllo",
+      "text": "Se ritieni che il trattamento violi la normativa applicabile, puoi proporre reclamo all’Autorità Garante per la protezione dei dati personali."
+    },
+    "changes": {
+      "title": "11. Modifiche alla presente informativa",
+      "text": "La presente Privacy Policy può essere aggiornata in qualsiasi momento. Eventuali modifiche saranno pubblicate su questa pagina con data di aggiornamento."
+    }
   }
+},
+"cookie": {
+  "title": "Cookie Policy",
+  "updated": "Ultimo aggiornamento: 13 marzo 2026",
+  "sections": {
+    "whatAreCookies": {
+      "title": "1. Cosa sono i cookie",
+      "text": "I cookie sono piccoli file di testo che i siti web inviano al dispositivo dell’utente per migliorare la navigazione, ricordare preferenze, raccogliere statistiche o, in alcuni casi, effettuare attività di tracciamento."
+    },
+    "types": {
+      "title": "2. Tipologie di cookie utilizzati",
+      "intro": "Questo sito può utilizzare le seguenti categorie di cookie:",
+      "technical": "Cookie tecnici o strettamente necessari: servono al corretto funzionamento del sito e non richiedono consenso.",
+      "preferences": "Cookie di preferenza: permettono di memorizzare alcune scelte dell’utente, se presenti sul sito.",
+      "analytics": "Cookie statistici / analytics: possono essere usati per raccogliere informazioni aggregate sull’utilizzo del sito. Se non anonimizzati o equiparabili ai tecnici, richiedono consenso.",
+      "marketing": "Cookie di marketing o profilazione: sono usati per tracciare l’utente e mostrargli contenuti o pubblicità personalizzati. Richiedono consenso preventivo."
+    },
+    "legalBasis": {
+      "title": "3. Base giuridica",
+      "text": "I cookie tecnici sono installati sulla base della necessità tecnica del servizio. I cookie analytics non tecnici, di profilazione o altri strumenti di tracciamento non essenziali vengono attivati solo previo consenso dell’utente."
+    },
+    "consent": {
+      "title": "4. Gestione del consenso",
+      "text1": "Al primo accesso, l’utente può visualizzare un banner cookie attraverso cui accettare, rifiutare o personalizzare l’uso dei cookie non tecnici, se presenti.",
+      "text2": "Il consenso può essere modificato o revocato in qualsiasi momento tramite le impostazioni dedicate del sito, se implementate, oppure tramite le impostazioni del browser."
+    },
+    "thirdParty": {
+      "title": "5. Cookie di terze parti",
+      "text": "Il sito potrebbe integrare contenuti o servizi di terze parti, come mappe, strumenti di analisi, social media o widget esterni. Tali servizi potrebbero installare cookie o altri strumenti di tracciamento secondo le rispettive policy."
+    },
+    "disable": {
+      "title": "6. Come disabilitare i cookie",
+      "text": "L’utente può gestire o disabilitare i cookie direttamente dalle impostazioni del proprio browser. La disattivazione dei cookie tecnici può però compromettere il corretto funzionamento del sito."
+    },
+    "list": {
+      "title": "7. Elenco dei cookie effettivamente usati",
+      "text1": "Da completare in base agli strumenti reali installati sul sito.",
+      "text2": "Esempio struttura:",
+      "text3": "- Nome cookie - Fornitore - Finalità - Durata - Tipologia (tecnico / analytics / marketing)"
+    },
+    "contacts": {
+      "title": "8. Contatti",
+      "text": "Per informazioni sulla presente Cookie Policy puoi contattare: bresciamaria@cenaspec.it"
+    }
+  }
+}
 }

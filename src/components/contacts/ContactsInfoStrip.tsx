@@ -4,6 +4,7 @@ import {
   IconPhone,
   IconMapPin,
 } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 import FadeIn from "../common/FadeIn";
 
 function InfoItem({
@@ -53,6 +54,8 @@ function InfoItem({
 }
 
 export default function ContactsInfoStrip() {
+  const { t } = useTranslation();
+
   return (
     <Box
       component="section"
@@ -68,8 +71,8 @@ export default function ContactsInfoStrip() {
             <FadeIn delay={0.04}>
               <InfoItem
                 icon={<IconMail size={34} stroke={1.8} />}
-                title="Email"
-                value="info@pietragrande.it"
+                title={t("contactsInfo.emailTitle")}
+                value={t("contactsInfo.emailValue")}
               />
             </FadeIn>
           </Grid.Col>
@@ -78,8 +81,8 @@ export default function ContactsInfoStrip() {
             <FadeIn delay={0.08}>
               <InfoItem
                 icon={<IconPhone size={34} stroke={1.8} />}
-                title="Telefono"
-                value="+39 xxxx xxxxxx"
+                title={t("contactsInfo.phoneTitle")}
+                value={t("contactsInfo.phoneValue")}
               />
             </FadeIn>
           </Grid.Col>
@@ -88,13 +91,11 @@ export default function ContactsInfoStrip() {
             <FadeIn delay={0.16}>
               <InfoItem
                 icon={<IconMapPin size={34} stroke={1.8} />}
-                title="Indirizzo"
-                value="Via Pantaniello 4, 73028 Otranto (LE)"
+                title={t("contactsInfo.addressTitle")}
+                value={t("contactsInfo.addressValue")}
               />
             </FadeIn>
           </Grid.Col>
-
-
         </Grid>
       </Container>
     </Box>

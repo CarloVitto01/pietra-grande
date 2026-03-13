@@ -13,19 +13,43 @@ import {
 import { motion } from "framer-motion";
 import { IconMapPin, IconPhone, IconMail } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 
 function FooterLink({
   href,
   label,
+  external = false,
 }: {
   href: string;
   label: string;
+  external?: boolean;
 }) {
+  if (external) {
+    return (
+      <motion.div whileHover={{ x: 3 }} transition={{ duration: 0.2 }}>
+        <Anchor
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          underline="never"
+          style={{
+            color: "rgba(255, 244, 233, 0.82)",
+            fontSize: "1rem",
+            fontFamily: "Georgia, serif",
+          }}
+        >
+          {label}
+        </Anchor>
+      </motion.div>
+    );
+  }
+
   return (
     <motion.div whileHover={{ x: 3 }} transition={{ duration: 0.2 }}>
       <Anchor
-        href={href}
+        component={Link}
+        to={href}
         underline="never"
         style={{
           color: "rgba(255, 244, 233, 0.82)",
@@ -146,10 +170,10 @@ export default function SiteFooter() {
                 </Title>
 
                 <Stack gap={8}>
-                  <FooterLink href="#home" label={t("nav.home")} />
-                  <FooterLink href="#camere" label={t("nav.rooms")} />
-                  <FooterLink href="#ristorante" label={t("nav.restaurant")} />
-                  <FooterLink href="#contatti" label={t("nav.contacts")} />
+                  <FooterLink href="/" label={t("nav.home")} />
+                  <FooterLink href="/camere" label={t("nav.rooms")} />
+                  <FooterLink href="/ristorante" label={t("nav.restaurant")} />
+                  <FooterLink href="/contatti" label={t("nav.contacts")} />
                 </Stack>
               </Stack>
             </motion.div>
@@ -197,15 +221,44 @@ export default function SiteFooter() {
         <Divider my={28} color="rgba(255,255,255,0.12)" />
 
         <Group justify="space-between" gap="md" wrap="wrap">
-          <Text
-            style={{
-              color: "rgba(255, 244, 233, 0.62)",
-              fontSize: "0.95rem",
-              fontFamily: "Georgia, serif",
-            }}
-          >
-            © 2026 Pietra Grande. {t("footer.rights")}
-          </Text>
+          <Group gap={14} wrap="wrap">
+            <Text
+              style={{
+                color: "rgba(255, 244, 233, 0.62)",
+                fontSize: "0.95rem",
+                fontFamily: "Georgia, serif",
+              }}
+            >
+              © 2026 Pietra Grande. {t("footer.rights")}
+            </Text>
+
+            <Anchor
+              component={Link}
+              to="/privacy-policy"
+              underline="never"
+              style={{
+                color: "rgba(255, 244, 233, 0.62)",
+                fontSize: "0.95rem",
+                fontFamily: "Georgia, serif",
+              }}
+            >
+              {t("Privacy")}
+
+            </Anchor>
+
+            <Anchor
+              component={Link}
+              to="/cookie-policy"
+              underline="never"
+              style={{
+                color: "rgba(255, 244, 233, 0.62)",
+                fontSize: "0.95rem",
+                fontFamily: "Georgia, serif",
+              }}
+            >
+              {t("Cookie Policy")}
+            </Anchor>
+          </Group>
 
           <Text
             style={{
@@ -214,7 +267,19 @@ export default function SiteFooter() {
               fontFamily: "Georgia, serif",
             }}
           >
-            {t("footer.createdBy")}
+            {t("footer.createdBy")}{" "}
+            <Anchor
+              href="https://photoandvision.it"
+              target="_blank"
+              rel="noopener noreferrer"
+              underline="never"
+              style={{
+                color: "#f2dfcf",
+                fontFamily: "Georgia, serif",
+              }}
+            >
+              Photo & Vision
+            </Anchor>
           </Text>
         </Group>
       </Container>

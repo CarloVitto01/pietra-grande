@@ -1,4 +1,5 @@
 import { Box, Container, Grid, Image, Stack, Text, Title } from "@mantine/core";
+import { useTranslation } from "react-i18next";
 import FadeIn from "../common/FadeIn";
 
 type Props = {
@@ -6,6 +7,8 @@ type Props = {
 };
 
 export default function RestaurantIntroSection({ chefImage }: Props) {
+  const { t } = useTranslation();
+
   return (
     <Box
       component="section"
@@ -29,7 +32,7 @@ export default function RestaurantIntroSection({ chefImage }: Props) {
                     color: "#111111",
                   }}
                 >
-                  Cucina autentica e sapori genuini
+                  {t("restaurantIntro.title")}
                 </Title>
 
                 <Text
@@ -40,10 +43,7 @@ export default function RestaurantIntroSection({ chefImage }: Props) {
                     color: "#1f1a12",
                   }}
                 >
-                  Il ristorante di Pietra Grande ti invita a scoprire i veri sapori
-                  della tradizione. La nostra cucina valorizza ingredienti freschi,
-                  prodotti del territorio e ricette autentiche, preparate con cura
-                  e passione per offrire un’esperienza calda e sincera.
+                  {t("restaurantIntro.text")}
                 </Text>
               </Stack>
             </FadeIn>
@@ -53,7 +53,7 @@ export default function RestaurantIntroSection({ chefImage }: Props) {
             <FadeIn delay={0.05}>
               <Image
                 src={chefImage}
-                alt="La cuoca del ristorante"
+                alt={t("restaurantIntro.imageAlt")}
                 radius={0}
                 h={300}
                 fit="cover"

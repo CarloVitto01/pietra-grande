@@ -40,7 +40,7 @@
     "phone": "+39 328 761 2770",
     "email": "bresciamaria@cenaspec.it",
     "rights": "All rights reserved.",
-    "createdBy": "Created by Photo & Vision"
+    "createdBy": "Created by "
   },
   "chefHighlight": {
     "imageAlt": "Our cook",
@@ -50,5 +50,211 @@
     "text": "Every dish is born from experienced hands, genuine ingredients and deep care for the flavors of tradition. Our cook brings the warmth of authentic cuisine to the table, turning every experience into a memory to be savored slowly.",
     "quote": "A sincere cuisine shaped by local roots, seasonality and care.",
     "button": "Discover the restaurant"
+  },
+  "roomsHero": {
+    "title": "Our Rooms",
+    "subtitle": "Comfort and charm in the heart of the countryside.",
+    "text": "The rooms of our agriturismo are tastefully furnished and equipped with every comfort to make your stay relaxing, pleasant and authentic."
+  },
+  "roomsGallery": {
+    "title": "Our Rooms",
+    "subtitle": "Welcoming spaces, refined details and essential comfort for an authentic and relaxing stay in the heart of the countryside.",
+    "eyebrow": "Rooms & Relax",
+    "button": "Book your room",
+    "features": {
+      "wifi": "Free Wi-Fi",
+      "airConditioning": "Air conditioning",
+      "tv": "Flat-screen TV",
+      "privateBathroom": "Private bathroom with shower"
+    },
+    "slides": [
+      {
+        "alt": "Agriturismo room main view",
+        "title": "An authentic and relaxing atmosphere",
+        "description": "Bright and welcoming rooms, designed to offer a pleasant stay with simplicity, warmth and comfort."
+      },
+      {
+        "alt": "Interior details of the agriturismo room",
+        "title": "Carefully designed spaces",
+        "description": "Essential furnishings, tidy spaces and a sense of quiet that accompanies every moment of your stay."
+      },
+      {
+        "alt": "Private bathroom of the agriturismo room",
+        "title": "Practical and functional comfort",
+        "description": "Every space is designed to ensure practicality and well-being, with private facilities and everything needed to feel at ease."
+      }
+    ]
+  },
+  "roomsMasonry": {
+    "title": "Spaces and Details",
+    "subtitle": "A selection of images to tell the story of the spaces, atmosphere and comfort of our rooms.",
+    "items": [
+      "Main view of the room",
+      "Details and sleeping area",
+      "Private bathroom",
+      "Bathroom details",
+      "Interior space",
+      "Room relaxation area"
+    ]
+  },
+  "restaurantHero": {
+    "title": "Our Restaurant",
+    "subtitle": "Authentic flavors from our land",
+    "text": "Our restaurant offers sincere local cuisine made with genuine ingredients, traditional recipes and a warm atmosphere that turns every lunch or dinner into an authentic experience."
+  },
+  "restaurantHighlights": {
+    "items": [
+      "Local flavors",
+      "Authentic tradition",
+      "Genuine hospitality"
+    ]
+  },
+  "restaurantIntro": {
+    "title": "Authentic cuisine and genuine flavors",
+    "text": "Pietra Grande restaurant invites you to discover the true flavors of tradition. Our cuisine highlights fresh ingredients, local products and authentic recipes, prepared with care and passion to offer a warm and sincere experience.",
+    "imageAlt": "The restaurant cook"
+  },
+  "restaurantCta": {
+    "title": "Our Restaurant",
+    "text": "A warm and welcoming setting where you can enjoy authentic traditional dishes prepared with fresh local ingredients.",
+    "button": "Book your table",
+    "imageAlt": "Restaurant"
+  },
+  "contactsHero": {
+    "title": "Contacts",
+    "subtitle": "We look forward to welcoming you in Otranto"
+  },
+  "contactsInfo": {
+    "emailTitle": "Email",
+    "emailValue": "bresciamaria@cenaspec.it",
+    "phoneTitle": "Phone",
+    "phoneValue": "+39 328 761 2770",
+    "addressTitle": "Address",
+    "addressValue": "Via Pagliarone SNC, 73028 Otranto (LE)"
+  },
+  "contactsMap": {
+    "mapTitle": "Pietra Grande Map",
+    "mapPlaceholder": "Insert the map embed URL to display the agriturismo location.",
+    "title": "Contact Us",
+    "text": "For any question or to book your stay, contact us directly on WhatsApp.",
+    "button": "Write to us on WhatsApp",
+    "whatsappMessage": "Hello Pietra Grande, I would like to receive more information."
+  },
+  "contactsSocial": {
+    "title": "Follow us on social media",
+    "text": "Follow us on our social channels to stay updated on news, experiences, dishes and special offers.",
+    "imageAlt": "Pietra Grande Agriturismo"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: March 13, 2026",
+    "sections": {
+      "owner": {
+        "title": "1. Data Controller",
+        "text1": "The Data Controller is Pietra Grande, with registered office in Via Pagliarone SNC, 73028 Otranto (LE).",
+        "text2": "Contact email: bresciamaria@cenaspec.it",
+        "text3": "Phone: +39 328 761 2770"
+      },
+      "dataCollected": {
+        "title": "2. Types of data collected",
+        "intro": "Through this website, the following data may be collected:",
+        "item1": "- identification and contact data voluntarily provided by the user, such as name, email, phone number and message content;",
+        "item2": "- technical browsing data, such as IP address, browser type, device, access time and technical logs;",
+        "item3": "- any data collected through cookies or similar tools, as described in the Cookie Policy."
+      },
+      "purposes": {
+        "title": "3. Purposes of processing",
+        "intro": "Personal data are processed in order to:",
+        "item1": "- respond to information requests or booking requests;",
+        "item2": "- manage communications with the user;",
+        "item3": "- ensure the proper technical functioning and security of the website;",
+        "item4": "- comply with legal obligations;",
+        "item5": "- collect anonymous or aggregated statistics, where applicable;",
+        "item6": "- carry out any marketing activities only with prior consent, where actually present."
+      },
+      "legalBasis": {
+        "title": "4. Legal basis for processing",
+        "intro": "Processing may be based on:",
+        "item1": "- the performance of pre-contractual or contractual measures, when the user requests information or a booking;",
+        "item2": "- compliance with legal obligations;",
+        "item3": "- the legitimate interest of the Data Controller, for website security, abuse prevention and technical management;",
+        "item4": "- the user’s consent, where required, for example for non-technical cookies or promotional communications."
+      },
+      "processingMethods": {
+        "title": "5. Processing methods",
+        "text": "Data are processed using IT and organizational tools appropriate to ensure their security, integrity and confidentiality, with reasonable measures to prevent unauthorized access, loss, disclosure or misuse."
+      },
+      "recipients": {
+        "title": "6. Data recipients",
+        "text1": "Data may be processed by persons authorized by the Data Controller and, where necessary, by external providers supporting the operation of the website or related services, such as hosting providers, email services, technical maintenance or analytics tools.",
+        "text2": "Where required, such subjects act as data processors."
+      },
+      "transfer": {
+        "title": "7. Data transfer",
+        "text": "Some technical providers may process data outside the European Economic Area. In such cases, the transfer takes place in compliance with applicable law and with appropriate safeguards."
+      },
+      "retention": {
+        "title": "8. Data retention period",
+        "text": "Data are retained for the time strictly necessary to achieve the purposes for which they were collected, unless different legal obligations apply or the protection of the Data Controller’s rights requires otherwise."
+      },
+      "rights": {
+        "title": "9. Data subject rights",
+        "text1": "The user may exercise the rights provided by privacy legislation, including access, rectification, erasure, restriction, objection, portability and withdrawal of consent, where applicable.",
+        "text2": "Requests may be sent to: bresciamaria@cenaspec.it"
+      },
+      "complaint": {
+        "title": "10. Complaint to the supervisory authority",
+        "text": "If you believe that the processing violates applicable law, you may lodge a complaint with the Italian Data Protection Authority."
+      },
+      "changes": {
+        "title": "11. Changes to this notice",
+        "text": "This Privacy Policy may be updated at any time. Any changes will be published on this page together with the update date."
+      }
+    }
+  },
+  "cookie": {
+    "title": "Cookie Policy",
+    "updated": "Last updated: March 13, 2026",
+    "sections": {
+      "whatAreCookies": {
+        "title": "1. What cookies are",
+        "text": "Cookies are small text files that websites send to the user’s device to improve browsing, remember preferences, collect statistics or, in some cases, perform tracking activities."
+      },
+      "types": {
+        "title": "2. Types of cookies used",
+        "intro": "This website may use the following categories of cookies:",
+        "technical": "Technical or strictly necessary cookies: they are required for the proper functioning of the website and do not require consent.",
+        "preferences": "Preference cookies: they allow certain user choices to be stored, where present on the website.",
+        "analytics": "Statistical / analytics cookies: they may be used to collect aggregated information on website use. If not anonymized or not equivalent to technical cookies, they require consent.",
+        "marketing": "Marketing or profiling cookies: they are used to track users and show personalized content or advertising. They require prior consent."
+      },
+      "legalBasis": {
+        "title": "3. Legal basis",
+        "text": "Technical cookies are installed on the basis of the technical necessity of the service. Non-technical analytics cookies, profiling cookies or other non-essential tracking tools are activated only with the user’s prior consent."
+      },
+      "consent": {
+        "title": "4. Consent management",
+        "text1": "On first access, the user may see a cookie banner through which they can accept, reject or customize the use of non-technical cookies, where present.",
+        "text2": "Consent may be modified or withdrawn at any time through the dedicated website settings, if implemented, or through browser settings."
+      },
+      "thirdParty": {
+        "title": "5. Third-party cookies",
+        "text": "The website may integrate third-party content or services, such as maps, analytics tools, social media or external widgets. These services may install cookies or other tracking tools according to their respective policies."
+      },
+      "disable": {
+        "title": "6. How to disable cookies",
+        "text": "The user may manage or disable cookies directly through their browser settings. However, disabling technical cookies may affect the proper functioning of the website."
+      },
+      "list": {
+        "title": "7. List of cookies actually used",
+        "text1": "To be completed according to the actual tools installed on the website.",
+        "text2": "Example structure:",
+        "text3": "- Cookie name - Provider - Purpose - Duration - Type (technical / analytics / marketing)"
+      },
+      "contacts": {
+        "title": "8. Contacts",
+        "text": "For information about this Cookie Policy you may contact: bresciamaria@cenaspec.it"
+      }
+    }
   }
 }

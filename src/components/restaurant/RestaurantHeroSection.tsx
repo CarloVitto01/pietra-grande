@@ -1,5 +1,6 @@
 import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import SiteNavbar from "../common/SiteNavbar";
 
 type Props = {
@@ -7,6 +8,8 @@ type Props = {
 };
 
 export default function RestaurantHeroSection({ backgroundImage }: Props) {
+  const { t } = useTranslation();
+
   return (
     <Box
       id="ristorante"
@@ -89,7 +92,7 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
                   fontStyle: "italic",
                 }}
               >
-                Il nostro ristorante
+                {t("restaurantHero.title")}
               </Title>
             </motion.div>
 
@@ -122,7 +125,7 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
                   color: "#f4eadf",
                 }}
               >
-                Delizie autentiche della nostra terra
+                {t("restaurantHero.subtitle")}
               </Text>
             </motion.div>
 
@@ -140,9 +143,7 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
                   maxWidth: 500,
                 }}
               >
-                Il nostro ristorante propone una cucina sincera e territoriale,
-                fatta di ingredienti genuini, ricette della tradizione e un’atmosfera
-                calda che rende ogni pranzo o cena un’esperienza autentica.
+                {t("restaurantHero.text")}
               </Text>
             </motion.div>
 
@@ -150,8 +151,7 @@ export default function RestaurantHeroSection({ backgroundImage }: Props) {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.66 }}
-            >
-            </motion.div>
+            />
           </Stack>
         </Box>
       </Container>

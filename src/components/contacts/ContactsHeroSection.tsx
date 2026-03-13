@@ -1,5 +1,6 @@
 import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import SiteNavbar from "../common/SiteNavbar";
 
 type Props = {
@@ -7,6 +8,8 @@ type Props = {
 };
 
 export default function ContactsHeroSection({ backgroundImage }: Props) {
+  const { t } = useTranslation();
+
   return (
     <Box
       id="contatti"
@@ -83,7 +86,7 @@ export default function ContactsHeroSection({ backgroundImage }: Props) {
                 fontStyle: "italic",
               }}
             >
-              Contatti
+              {t("contactsHero.title")}
             </Title>
           </motion.div>
 
@@ -116,7 +119,7 @@ export default function ContactsHeroSection({ backgroundImage }: Props) {
                 color: "#f4eadf",
               }}
             >
-              Ti aspettiamo tra le colline toscane
+              {t("contactsHero.subtitle")}
             </Text>
           </motion.div>
         </Stack>
