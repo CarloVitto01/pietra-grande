@@ -28,9 +28,9 @@ export default function RestaurantPage() {
 
       <RestaurantHighlightsSection
         items={[
-          { image: highlight1, title: "Prodotti a km 0" },
-          { image: highlight2, title: "Piatti Tipici" },
-          { image: highlight3, title: "Cucina Casalinga e Genuina" },
+          { image: highlight1 },
+          { image: highlight2 },
+          { image: highlight3 },
         ]}
       />
 

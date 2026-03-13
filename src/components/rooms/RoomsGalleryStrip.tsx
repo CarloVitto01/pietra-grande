@@ -206,11 +206,9 @@ export default function RoomsGalleryStrip({
                   pointerEvents: "none",
                 }}
               >
-                <motion.button
+                <button
                   type="button"
                   onClick={goPrev}
-                  whileHover={{ scale: 1.06 }}
-                  whileTap={{ scale: 0.96 }}
                   style={{
                     pointerEvents: "auto",
                     width: 46,
@@ -225,16 +223,15 @@ export default function RoomsGalleryStrip({
                     justifyContent: "center",
                     cursor: "pointer",
                     boxShadow: "0 8px 18px rgba(0,0,0,0.12)",
+                    padding: 0,
                   }}
                 >
                   <IconChevronLeft size={20} stroke={1.9} />
-                </motion.button>
+                </button>
 
-                <motion.button
+                <button
                   type="button"
                   onClick={goNext}
-                  whileHover={{ scale: 1.06 }}
-                  whileTap={{ scale: 0.96 }}
                   style={{
                     pointerEvents: "auto",
                     width: 46,
@@ -249,120 +246,131 @@ export default function RoomsGalleryStrip({
                     justifyContent: "center",
                     cursor: "pointer",
                     boxShadow: "0 8px 18px rgba(0,0,0,0.12)",
+                    padding: 0,
                   }}
                 >
                   <IconChevronRight size={20} stroke={1.9} />
-                </motion.button>
+                </button>
               </Group>
             </Box>
           </Grid.Col>
 
           <Grid.Col span={{ base: 12, md: 5 }}>
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeIndex}
-                initial={{ opacity: 0, x: 18 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -18 }}
-                transition={{ duration: 0.45 }}
-                style={{ height: "100%" }}
-              >
-                <Box
-                  style={{
-                    background: "#efe5d8",
-                    border: "1px solid rgba(103, 76, 55, 0.1)",
-                    boxShadow: "0 16px 36px rgba(0,0,0,0.05)",
-                    padding: "34px 28px",
-                    minHeight: 480,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <Stack gap={18}>
-                    <Box>
-                      <Text
+            <Box
+              style={{
+                background: "#efe5d8",
+                border: "1px solid rgba(103, 76, 55, 0.1)",
+                boxShadow: "0 16px 36px rgba(0,0,0,0.05)",
+                padding: "34px 28px",
+                minHeight: 480,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <Stack gap={18}>
+                <Box>
+                  <Text
+                    style={{
+                      color: "#a86424",
+                      fontSize: "0.82rem",
+                      fontWeight: 700,
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      marginBottom: 10,
+                    }}
+                  >
+                    {t("roomsGallery.eyebrow")}
+                  </Text>
+
+                  <Box
+                    style={{
+                      position: "relative",
+                      minHeight: 150,
+                    }}
+                  >
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={`text-${activeIndex}`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.35 }}
                         style={{
-                          color: "#a86424",
-                          fontSize: "0.82rem",
-                          fontWeight: 700,
-                          letterSpacing: "0.12em",
-                          textTransform: "uppercase",
-                          marginBottom: 10,
+                          position: "absolute",
+                          inset: 0,
                         }}
                       >
-                        {t("roomsGallery.eyebrow")}
-                      </Text>
+                        <Text
+                          style={{
+                            fontFamily: "Georgia, serif",
+                            fontSize: "clamp(1.55rem, 2.2vw, 2.2rem)",
+                            lineHeight: 1.18,
+                            color: "#6b4a33",
+                            fontWeight: 500,
+                            marginBottom: 14,
+                          }}
+                        >
+                          {activeSlide.title}
+                        </Text>
 
-                      <Text
-                        style={{
-                          fontFamily: "Georgia, serif",
-                          fontSize: "clamp(1.55rem, 2.2vw, 2.2rem)",
-                          lineHeight: 1.18,
-                          color: "#6b4a33",
-                          fontWeight: 500,
-                          marginBottom: 14,
-                        }}
-                      >
-                        {activeSlide.title}
-                      </Text>
-
-                      <Text
-                        style={{
-                          color: "rgba(107, 74, 51, 0.88)",
-                          fontSize: "0.98rem",
-                          lineHeight: 1.8,
-                        }}
-                      >
-                        {activeSlide.description}
-                      </Text>
-                    </Box>
-
-                    <Stack gap={12}>
-                      <FeatureItem
-                        icon={<IconWifi size={18} stroke={1.8} />}
-                        label={t("roomsGallery.features.wifi")}
-                      />
-                      <FeatureItem
-                        icon={<IconSnowflake size={18} stroke={1.8} />}
-                        label={t("roomsGallery.features.airConditioning")}
-                      />
-                      <FeatureItem
-                        icon={<IconDeviceTv size={18} stroke={1.8} />}
-                        label={t("roomsGallery.features.tv")}
-                      />
-                      <FeatureItem
-                        icon={<IconBath size={18} stroke={1.8} />}
-                        label={t("roomsGallery.features.privateBathroom")}
-                      />
-                    </Stack>
-                  </Stack>
-
-                  <Box mt={28}>
-                    <Button
-                      component={motion.a}
-                      whileHover={{ y: -2, scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      href="#contatti"
-                      radius={0}
-                      fullWidth
-                      style={{
-                        background: "#a86424",
-                        color: "#fff7ef",
-                        height: 50,
-                        fontSize: "0.92rem",
-                        fontWeight: 700,
-                        letterSpacing: "0.04em",
-                        textTransform: "uppercase",
-                        boxShadow: "0 10px 24px rgba(0,0,0,0.08)",
-                      }}
-                    >
-                      {t("roomsGallery.button")}
-                    </Button>
+                        <Text
+                          style={{
+                            color: "rgba(107, 74, 51, 0.88)",
+                            fontSize: "0.98rem",
+                            lineHeight: 1.8,
+                          }}
+                        >
+                          {activeSlide.description}
+                        </Text>
+                      </motion.div>
+                    </AnimatePresence>
                   </Box>
                 </Box>
-              </motion.div>
-            </AnimatePresence>
+
+                <Stack gap={12}>
+                  <FeatureItem
+                    icon={<IconWifi size={18} stroke={1.8} />}
+                    label={t("roomsGallery.features.wifi")}
+                  />
+                  <FeatureItem
+                    icon={<IconSnowflake size={18} stroke={1.8} />}
+                    label={t("roomsGallery.features.airConditioning")}
+                  />
+                  <FeatureItem
+                    icon={<IconDeviceTv size={18} stroke={1.8} />}
+                    label={t("roomsGallery.features.tv")}
+                  />
+                  <FeatureItem
+                    icon={<IconBath size={18} stroke={1.8} />}
+                    label={t("roomsGallery.features.privateBathroom")}
+                  />
+                </Stack>
+              </Stack>
+
+              <Box mt={28}>
+                <Button
+                  component={motion.a}
+                  whileHover={{ y: -2, scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  href="#contatti"
+                  radius={0}
+                  fullWidth
+                  style={{
+                    background: "#a86424",
+                    color: "#fff7ef",
+                    height: 50,
+                    fontSize: "0.92rem",
+                    fontWeight: 700,
+                    letterSpacing: "0.04em",
+                    textTransform: "uppercase",
+                    boxShadow: "0 10px 24px rgba(0,0,0,0.08)",
+                  }}
+                >
+                  {t("roomsGallery.button")}
+                </Button>
+              </Box>
+            </Box>
           </Grid.Col>
         </Grid>
       </Container>

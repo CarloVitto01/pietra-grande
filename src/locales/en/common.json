@@ -37,7 +37,7 @@
     "explore": "Explore",
     "contactsTitle": "Contacts",
     "address": "Via Pantaniello 4, 73028 Otranto (LE)",
-    "phone": "+39 328 761 2770",
+    "phone": "+39 xxx xxx xxxx",
     "email": "bresciamaria@cenaspec.it",
     "rights": "All rights reserved.",
     "createdBy": "Created by "
@@ -128,7 +128,7 @@
     "emailTitle": "Email",
     "emailValue": "bresciamaria@cenaspec.it",
     "phoneTitle": "Phone",
-    "phoneValue": "+39 328 761 2770",
+    "phoneValue": "+39 xxx xxx xxxx",
     "addressTitle": "Address",
     "addressValue": "Via Pagliarone SNC, 73028 Otranto (LE)"
   },
@@ -153,7 +153,7 @@
         "title": "1. Data Controller",
         "text1": "The Data Controller is Pietra Grande, with registered office in Via Pagliarone SNC, 73028 Otranto (LE).",
         "text2": "Contact email: bresciamaria@cenaspec.it",
-        "text3": "Phone: +39 328 761 2770"
+        "text3": "Phone: +39 xxx xxx xxxx"
       },
       "dataCollected": {
         "title": "2. Types of data collected",

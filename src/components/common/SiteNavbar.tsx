@@ -7,11 +7,13 @@ import {
   Stack,
   Anchor,
   Image,
+  ActionIcon,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { IconX } from "@tabler/icons-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import logo from "../../assets/images/logo.svg";
 
@@ -147,31 +149,54 @@ export default function SiteNavbar() {
             background: "#ffffff",
           },
           body: {
-            paddingTop: 40,
+            paddingTop: 28,
+            height: "100%",
           },
         }}
       >
-        <Stack gap="lg">
-          {links.map((link) => {
-            const isActive = location.pathname === link.href;
+        <Stack
+          h="100%"
+          justify="flex-start"
+          align="center"
+          gap={34}
+        >
+          <Group justify="flex-end" w="100%">
+            <ActionIcon
+              variant="subtle"
+              color="dark"
+              onClick={close}
+              aria-label="Chiudi menu"
+              size={34}
+              radius="xl"
+            >
+              <IconX size={22} stroke={2} />
+            </ActionIcon>
+          </Group>
 
-            return (
-              <Anchor
-                key={link.label}
-                href={link.href}
-                underline="never"
-                onClick={close}
-                style={{
-                  color: isActive ? "#b8893c" : "#1f1a12",
-                  fontSize: "1.15rem",
-                  fontWeight: 500,
-                  fontFamily: "Georgia, serif",
-                }}
-              >
-                {link.label}
-              </Anchor>
-            );
-          })}
+          <Stack gap={22} align="center" w="100%" mt={8}>
+            {links.map((link) => {
+              const isActive = location.pathname === link.href;
+
+              return (
+                <Anchor
+                  key={link.label}
+                  href={link.href}
+                  underline="never"
+                  onClick={close}
+                  ta="center"
+                  style={{
+                    color: isActive ? "#b8893c" : "#1f1a12",
+                    fontSize: "1.2rem",
+                    fontWeight: 500,
+                    fontFamily: "Georgia, serif",
+                    width: "100%",
+                  }}
+                >
+                  {link.label}
+                </Anchor>
+              );
+            })}
+          </Stack>
         </Stack>
       </Drawer>
     </>
