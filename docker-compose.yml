@@ -1,5 +1,6 @@
 services:
   pietra-grande-frontend:
+    build: .
     container_name: pietra-grande-frontend
     ports:
       - "8090:80"
