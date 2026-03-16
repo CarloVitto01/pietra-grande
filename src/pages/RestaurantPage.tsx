@@ -10,7 +10,7 @@ import heroImage from "../assets/images/intro-7.jpg";
 import chefImage from "../assets/images/cuoca-4.jpg";
 import highlight1 from "../assets/images/piatto.jpg";
 import highlight2 from "../assets/images/olio.jpg";
-import highlight3 from "../assets/images/piatto-3.jpg";
+import highlight3 from "../assets/images/piatto-3.webp";
 import gallery1 from "../assets/images/piatto-4.jpg";
 import gallery2 from "../assets/images/piatto-5.jpg";
 import gallery3 from "../assets/images/piatto-6.jpg";
