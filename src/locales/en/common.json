@@ -37,8 +37,8 @@
     "explore": "Explore",
     "contactsTitle": "Contacts",
     "address": "Via Pantaniello 4, 73028 Otranto (LE)",
-    "phone": "+39 xxx xxx xxxx",
-    "email": "bresciamaria@cenaspec.it",
+    "phone": "+39 388 106 3408",
+    "email": "agriturismopietragrande1@gmail.com",
     "rights": "All rights reserved.",
     "createdBy": "Created by "
   },
@@ -91,7 +91,7 @@
     "items": [
       "Main view of the room",
       "Details and sleeping area",
-      "Private bathroom",
+      "Room exterior",
       "Bathroom details",
       "Interior space",
       "Room relaxation area"
@@ -126,11 +126,11 @@
   },
   "contactsInfo": {
     "emailTitle": "Email",
-    "emailValue": "bresciamaria@cenaspec.it",
+    "emailValue": "agriturismopietragrande1@gmail.com",
     "phoneTitle": "Phone",
-    "phoneValue": "+39 xxx xxx xxxx",
+    "phoneValue": "+39 388 106 3408",
     "addressTitle": "Address",
-    "addressValue": "Via Pagliarone SNC, 73028 Otranto (LE)"
+    "addressValue": "Via Pantaniello 4, 73028 Otranto (LE)"
   },
   "contactsMap": {
     "mapTitle": "Pietra Grande Map",
@@ -151,9 +151,9 @@
     "sections": {
       "owner": {
         "title": "1. Data Controller",
-        "text1": "The Data Controller is Pietra Grande, with registered office in Via Pagliarone SNC, 73028 Otranto (LE).",
-        "text2": "Contact email: bresciamaria@cenaspec.it",
-        "text3": "Phone: +39 xxx xxx xxxx"
+        "text1": "The Data Controller is Pietra Grande, with registered office in Via Pantaniello 4, 73028 Otranto (LE).",
+        "text2": "Contact email: agriturismopietragrande1@gmail.com",
+        "text3": "Phone: +39 388 106 3408"
       },
       "dataCollected": {
         "title": "2. Types of data collected",
@@ -253,7 +253,7 @@
       },
       "contacts": {
         "title": "8. Contacts",
-        "text": "For information about this Cookie Policy you may contact: bresciamaria@cenaspec.it"
+        "text": "For information about this Cookie Policy you may contact: agriturismopietragrande1@gmail.com"
       }
     }
   }

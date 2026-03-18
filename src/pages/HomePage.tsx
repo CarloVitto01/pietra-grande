@@ -8,7 +8,7 @@ import heroImage from "../assets/images/hero.jpg";
 import intro1 from "../assets/images/intro-1.jpg";
 import intro2 from "../assets/images/intro-2.jpg";
 import intro3 from "../assets/images/room.webp";
-import roomImage from "../assets/images/room.webp";
+import roomImage from "../assets/images/room-10.jpg";
 import restaurantImage from "../assets/images/piatto-3.webp";
 import ctaImage from "../assets/images/intro-1.jpg";
 import SiteFooter from "../components/common/SiteFooter";

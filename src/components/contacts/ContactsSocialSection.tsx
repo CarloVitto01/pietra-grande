@@ -1,5 +1,5 @@
 import { ActionIcon, Box, Container, Grid, Image, Stack, Text, Title } from "@mantine/core";
-import { IconBrandFacebook, IconBrandInstagram, IconMail } from "@tabler/icons-react";
+import { IconBrandFacebook, IconBrandInstagram } from "@tabler/icons-react";
 import { useTranslation } from "react-i18next";
 import FadeIn from "../common/FadeIn";
 
@@ -63,16 +63,30 @@ export default function ContactsSocialSection({ image }: Props) {
                       gap: 14,
                     }}
                   >
-                    <ActionIcon radius={999} size={46} variant="filled" color="dark">
+                    <ActionIcon
+                      component="a"
+                      href="https://www.facebook.com/agriturismopietragrande/?locale=it_IT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      radius={999}
+                      size={46}
+                      variant="filled"
+                      color="dark"
+                    >
                       <IconBrandFacebook size={22} />
                     </ActionIcon>
 
-                    <ActionIcon radius={999} size={46} variant="filled" color="dark">
+                    <ActionIcon
+                      component="a"
+                      href="https://www.instagram.com/explore/locations/151176472413397/agriturismo-pietra-grande/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      radius={999}
+                      size={46}
+                      variant="filled"
+                      color="dark"
+                    >
                       <IconBrandInstagram size={22} />
-                    </ActionIcon>
-
-                    <ActionIcon radius={999} size={46} variant="filled" color="dark">
-                      <IconMail size={22} />
                     </ActionIcon>
                   </Box>
                 </Stack>

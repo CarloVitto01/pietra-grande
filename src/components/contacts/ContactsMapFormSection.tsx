@@ -19,7 +19,7 @@ export default function ContactsMapFormSection({ mapEmbedUrl }: Props) {
   const { t } = useTranslation();
 
   const whatsappMessage = encodeURIComponent(t("contactsMap.whatsappMessage"));
-  const whatsappUrl = `https://wa.me/393287612770?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/393881063408?text=${whatsappMessage}`;
 
   return (
     <Box

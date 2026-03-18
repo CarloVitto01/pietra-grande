@@ -5,7 +5,7 @@ import RoomsGalleryStrip from "../components/rooms/RoomsGalleryStrip";
 import roomsHeroImage from "../assets/images/room.webp";
 import gallery1 from "../assets/images/room.webp";
 import gallery2 from "../assets/images/room-2.jpg";
-import gallery3 from "../assets/images/room-8.jpg";
+import gallery3 from "../assets/images/intro-4.jpg";
 import gallery4 from "../assets/images/room-4.jpg";
 import gallery5 from "../assets/images/room-5.jpg";
 import gallery6 from "../assets/images/room-6.jpg";

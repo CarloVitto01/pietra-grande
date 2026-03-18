@@ -37,8 +37,8 @@
     "explore": "Esplora",
     "contactsTitle": "Contatti",
     "address": "Via Pantaniello 4, 73028 Otranto (LE)",
-    "phone": "+39 xxx xxx xxxx",
-    "email": "bresciamaria@cenaspec.it",
+    "phone": "+39 388 106 3408",
+    "email": "agriturismopietragrande1@gmail.com",
     "rights": "Tutti i diritti riservati.",
     "createdBy": "Created by"
   },
@@ -91,7 +91,7 @@
     "items": [
       "Vista principale della camera",
       "Dettagli e zona notte",
-      "Bagno privato",
+      "Esterno della camera",
       "Dettagli del bagno",
       "Ambiente interno",
       "Zona relax della camera"
@@ -126,11 +126,11 @@
   },
   "contactsInfo": {
     "emailTitle": "Email",
-    "emailValue": "bresciamaria@cenaspec.it",
+    "emailValue": "agriturismopietragrande1@gmail.com",
     "phoneTitle": "Telefono",
-    "phoneValue": "+39 xxx xxx xxxx",
+    "phoneValue": "+39 388 106 3408",
     "addressTitle": "Indirizzo",
-    "addressValue": "Via Pagliarone SNC, 73028 Otranto (LE)"
+    "addressValue": "Via Pantaniello 4, 73028 Otranto (LE)"
   },
   "contactsMap": {
     "mapTitle": "Mappa Pietra Grande",
@@ -151,9 +151,9 @@
   "sections": {
     "owner": {
       "title": "1. Titolare del trattamento",
-      "text1": "Il Titolare del trattamento è Pietra Grande, con sede in Via Pagliarone SNC, 73028 Otranto (LE).",
-      "text2": "Email di contatto: bresciamaria@cenaspec.it",
-      "text3": "Telefono: +39 xxx xxx xxxx"
+      "text1": "Il Titolare del trattamento è Pietra Grande, con sede in Via Pantaniello 4, 73028 Otranto (LE).",
+      "text2": "Email di contatto: agriturismopietragrande1@gmail.com",
+      "text3": "Telefono: +39 388 106 3408"
     },
     "dataCollected": {
       "title": "2. Tipologie di dati raccolti",
@@ -253,7 +253,7 @@
     },
     "contacts": {
       "title": "8. Contatti",
-      "text": "Per informazioni sulla presente Cookie Policy puoi contattare: bresciamaria@cenaspec.it"
+      "text": "Per informazioni sulla presente Cookie Policy puoi contattare: agriturismopietragrande1@gmail.com"
     }
   }
 }
