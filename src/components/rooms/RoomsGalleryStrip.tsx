@@ -353,7 +353,7 @@ export default function RoomsGalleryStrip({
                   component={motion.a}
                   whileHover={{ y: -2, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  href="https://wa.me/393881063408?text=Salve%2C%20vorrei%20prenotare%20una%20camera."
+                  href="https://wa.me/393881063408"
                   target="_blank"
                   rel="noopener noreferrer"
                   radius={0}

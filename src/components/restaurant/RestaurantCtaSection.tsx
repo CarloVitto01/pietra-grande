@@ -83,7 +83,7 @@ export default function RestaurantCtaSection({ images }: Props) {
                       component={motion.a}
                       whileHover={{ y: -1 }}
                       whileTap={{ scale: 0.985 }}
-                      href="https://wa.me/393881063408?text=Salve%2C%20vorrei%20prenotare%20un%20tavolo."
+                      href="https://wa.me/393881063408"
                       target="_blank"
                       rel="noopener noreferrer"
                       radius="xl"
