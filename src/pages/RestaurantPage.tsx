@@ -11,13 +11,14 @@ import chefImage from "../assets/images/cuoca-4.jpg";
 import highlight1 from "../assets/images/piatto.jpg";
 import highlight2 from "../assets/images/olio.jpg";
 import highlight3 from "../assets/images/piatto-3.webp";
-import gallery1 from "../assets/images/piatto-4.jpg";
-import gallery2 from "../assets/images/piatto-5.jpg";
-import gallery3 from "../assets/images/piatto-6.jpg";
+import gallery1 from "../assets/images/cuoca-6.jpg";
+import gallery2 from "../assets/images/cuoca-3.jpg";
+import gallery3 from "../assets/images/cuoca-5.jpg";
 import img1 from "../assets/images/piatto-7.jpg";
 import img2 from "../assets/images/piatto-8.jpg";
 import img3 from "../assets/images/piatto-9.jpg";
-import img4 from "../assets/images/piatto-10.jpg";  
+import img4 from "../assets/images/piatto-10.jpg";
+import img5 from "../assets/images/piatto-4.jpg";
 
 export default function RestaurantPage() {
   return (
@@ -41,9 +42,9 @@ export default function RestaurantPage() {
       />
 
       <RestaurantCtaSection
-        images={[img1, img2, img3, img4]}
+        images={[img1, img2, img3, img4,img5]}
       />
-
+      
       <SiteFooter />
     </Box>
   );

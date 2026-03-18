@@ -144,14 +144,16 @@ export default function RoomsMasonryGallery({ images }: Props) {
   const gallery = useMemo<GalleryItem[]>(() => {
     const fallback = images[0] ?? "";
 
-    return [
-      { src: images[0] ?? fallback, alt: t("roomsMasonry.items.0") },
-      { src: images[1] ?? fallback, alt: t("roomsMasonry.items.1") },
-      { src: images[2] ?? fallback, alt: t("roomsMasonry.items.2") },
-      { src: images[3] ?? fallback, alt: t("roomsMasonry.items.3") },
-      { src: images[4] ?? fallback, alt: t("roomsMasonry.items.4") },
-      { src: images[5] ?? fallback, alt: t("roomsMasonry.items.5") },
-    ].filter((item) => item.src);
+return [
+  { src: images[0] ?? fallback, alt: t("roomsMasonry.items.0") },
+  { src: images[1] ?? fallback, alt: t("roomsMasonry.items.1") },
+  { src: images[2] ?? fallback, alt: t("roomsMasonry.items.2") },
+  { src: images[3] ?? fallback, alt: t("roomsMasonry.items.3") },
+  { src: images[4] ?? fallback, alt: t("roomsMasonry.items.4") },
+  { src: images[5] ?? fallback, alt: t("roomsMasonry.items.5") },
+  { src: images[6] ?? fallback, alt: t("roomsMasonry.items.6") },
+  { src: images[7] ?? fallback, alt: t("roomsMasonry.items.7") },
+].filter((item) => item.src);
   }, [images, t]);
 
   const [opened, setOpened] = useState(false);
@@ -274,6 +276,28 @@ export default function RoomsMasonryGallery({ images }: Props) {
                   onClick={() => openPreview(5)}
                 />
               </Grid.Col>
+            )}
+            {gallery[6] && (
+              <Grid.Col span={{ base: 12, md: 6 }}>
+                <GalleryCard
+                  item={gallery[6]}
+                  delay={0.28}
+                  height={280}
+                  onClick={() => openPreview(6)}
+                />
+              </Grid.Col>
+            )}
+
+            {gallery[7] && (
+              <Grid.Col span={{ base: 12, md: 6 }}>
+                <GalleryCard
+                  item={gallery[7]}
+                  delay={0.32}
+                  height={280}
+                  onClick={() => openPreview(7)}
+                />
+              </Grid.Col>
+
             )}
           </Grid>
         </Container>

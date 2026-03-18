@@ -9,10 +9,11 @@ import gallery3 from "../assets/images/intro-4.jpg";
 import gallery4 from "../assets/images/room-4.jpg";
 import gallery5 from "../assets/images/room-5.jpg";
 import gallery6 from "../assets/images/room-6.jpg";
-import gallery7 from "../assets/images/room-7.jpg";
+import gallery7 from "../assets/images/piatto-6.jpg";
+import gallery8 from "../assets/images/piatto-5.jpg";
+
 import RoomsMasonryGallery from "../components/rooms/RoomsMasonryGallery";
 import SiteFooter from "../components/common/SiteFooter";
-
 
 export default function RoomsPage() {
   return (
@@ -34,6 +35,8 @@ export default function RoomsPage() {
           gallery5,
           gallery6,
           gallery7,
+          gallery8,
+
         ]}
       />
        <SiteFooter />
