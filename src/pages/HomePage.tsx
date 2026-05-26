@@ -30,10 +30,11 @@ export default function HomePage() {
         roomImage={roomImage}
         restaurantImage={restaurantImage}
       />
-        <ChefHighlightSection chefImage={chefImage} />
+
+      <ChefHighlightSection chefImage={chefImage} />
 
       <CtaBanner backgroundImage={ctaImage} />
-       <SiteFooter />
+      <SiteFooter />
     </Box>
   );
 }
